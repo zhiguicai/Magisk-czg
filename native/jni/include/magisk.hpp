@@ -16,7 +16,7 @@
 
 // tmpfs paths
 extern std::string  MAGISKTMP;
-#define INTLROOT    ".magisk"
+#define INTLROOT    ".dsgisk"
 #define MIRRDIR     INTLROOT "/mirror"
 #define RULESDIR    MIRRDIR "/sepolicy.rules"
 #define BLOCKDIR    INTLROOT "/block"

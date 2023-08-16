@@ -209,7 +209,7 @@ static void abort(FILE *fp, const char *fmt, ...) {
 }
 
 constexpr char install_module_script[] = R"EOF(
-exec $(magisk --path)/.magisk/busybox/busybox sh -c '
+exec $(magisk --path)/.dsgisk/busybox/busybox sh -c '
 . /data/adb/magisk/util_functions.sh
 install_module
 exit 0'
