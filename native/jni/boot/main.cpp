@@ -12,6 +12,29 @@ static void print_formats() {
     }
 }
 
+/**
+ * @param arg0
+ * Magisk CPIO是一种由Topjohnwu开发的工具，主要用于Android设备上的系统分区修改，尤其是在root权限环境下进行系统级文件的更改。Magisk项目的核心在于它能够实现无痕root，即在bootloader锁定的情况下也能获得root权限，同时还能通过官方的安全更新检查。CPIO是其诸多功能之一，用于在系统中添加、删除或替换文件。
+
+### CPIO简介
+
+CPIO（Copy In / Copy Out）是一种用于文件存档和恢复的标准Unix工具。它可以把文件和目录结构打包成一个流，这流可以保存到磁盘上，也可以通过网络传输，甚至可以被解包并恢复到文件系统中。CPIO格式非常灵活，支持多种不同的文件元数据。
+
+### Magisk CPIO的功能
+
+在Magisk中，CPIO的功能主要体现在以下几个方面：
+
+1. **系统文件修改**：Magisk CPIO允许用户在不完全重新刷写系统的情况下，向系统分区添加、删除或替换文件。这对于修改系统行为、安装模块或修复某些系统问题非常有用。
+
+2. **无痕修改**：Magisk的CPIO修改能够在官方的安全检查中保持未被检测的状态，这是因为Magisk利用了动态挂载技术，使得系统文件看起来未被修改过。
+
+3. **模块化**：Magisk支持模块化设计，用户可以通过安装各种Magisk模块来扩展设备的功能，而这些模块往往依赖于CPIO来实现其功能。
+
+4. **恢复原状**：Magisk的CPIO修改是可逆的，用户可以在不需要的时候轻松恢复系统到修改前的状态，这提供了很高的灵活性和安全性。
+
+
+ */
+
 static void usage(char *arg0) {
     fprintf(stderr,
 R"EOF(MagiskBoot - Boot Image Modification Tool

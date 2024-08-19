@@ -296,7 +296,9 @@ static void switch_cgroup(const char *cgroup, int pid) {
     xwrite(fd, buf, strlen(buf));
     close(fd);
 }
-
+/**
+ * 宿主进程的入口
+ */
 static void daemon_entry() {
     magisk_logging();
 
